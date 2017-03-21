@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html lang = "en">
+		<head>
+			<meta charset = "utf-8">
+			<title>IFE JavaScript Task 01</title>
+		</head>
+		<body>
+			
+			<label>请输入今天北京空气质量：<input id="aqi-input" type="text"></label>
+			<button>确认填写</button>
+			<div>您输入的值是：<span>尚无录入</span></div>
+			<script>
+//				(function () {
+				var inputText = document.getElementById("aqi-input");
+				var display = document.getElementsByTagName("span"); 
+				var btn = document.getElementsByTagName("button");
+				
+/*				inputText.onchange = function(){
+					display[0].innerHTML = inputText.value;
+				};
+*/
+				btn[0].onclick = function(){
+					display[0].innerHTML = inputText.value;
+				};
+				
+				
+				
+//				inputText.value = 123;
+//				alert(display[0].innerHTML);
+//				btn.onclick = function() {
+//					display[0].innerHTML = inputText.value;
+//				}	
+
+//				document.addEventListener(btn[0], "onclick", function() {display[0].innerHTML = inputText.value;});
+//				}) ();
+/*		    	btn[0].onclick = function() {
+				display[0].innerHTML = inputText.value;
+				}
+*/			
+			</script>
+		</body>
+	</html>
